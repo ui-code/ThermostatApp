@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermostat App | theuicode.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex flex-row align-items-center justify-content-between px-2 py-4">
+            <i class="fas fa-chevron-left dark-grey"></i>
+            <span class="font20 weight-600 dark-grey">Thermostat</span>
+            <i class="fas fa-cog dark-grey"></i>
+        </div>
+
+        <div class="pb-5 d-flex flex-row align-items-center justify-content-center">
+            <span class="light-grey">Living room</span>
+            <i class="fas fa-chevron-down font12 light-grey mt-1 ms-2"></i>
+        </div>
+
+        <div class="mt-5 pt-5 position-relative d-flex flex-row justify-content-center align-items-center">
+            <div class="outer position-absolute">
+                <div class="marker"></div>
+            </div>
+            <div class="middle position-absolute"></div>
+            <div class="inner position-absolute d-flex flex-column justify-content-center align-items-center">
+                <span class="font14 blue">Cooling</span>
+                <span class="font48 weight-700 dark-grey">24</span>
+            </div>
+        </div>
+
+        <div class="mt-5 pt-5 d-flex flex-row justify-content-center">
+            <span class="font20 medium-grey mx-2 mt-4">°C</span>
+            <span class="font20 light-grey mx-2 mt-4">°F</span>
+        </div>
+
+        <div class="mt-4 d-flex flex-column align-items-center">
+            <span class="font28 medium-grey">50%</span>
+            <span class="font14 light-grey">humidity</span>
+        </div>
+
+        <div class="d-flex flex-row justify-content-around mt-5 pt-3 menu">
+            <i class="fas fa-thermometer-quarter active "></i>
+            <i class="far fa-snowflake "></i>
+            <i class="far fa-lightbulb "></i>
+            <i class="fas fa-wind"></i>
+        </div>
+    </div>
+</body>
+
+</html>

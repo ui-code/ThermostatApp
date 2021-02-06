@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div.container {
+    width: 300px;
+    height: 600px;
+    background: #f2f5fa;
+    border-radius: 30px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font28 {
+    font-size: 28px;
+}
+
+.font48 {
+    font-size: 48px;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.weight-700 {
+    font-weight: 700;
+}
+
+.dark-grey {
+    color: #3C414B;
+}
+
+.light-grey {
+    color: #B6BAC0;
+}
+
+.medium-grey {
+    color: #41454A;
+}
+
+.blue {
+    color: #2CD9E5;
+}
+
+div.outer {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#1aebef 0deg, #2cd9e5 135deg, #f4f5f7 0deg);
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+
+div.middle {
+    height: 190px;
+    width: 190px;
+    background: #e3e5ec;
+    border-radius: 50%;
+}
+
+div.inner {
+    width: 130px;
+    height: 130px;
+    background: #f7f9fb;
+    border-radius: 50%;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+div.marker {
+    width: 20px;
+    height: 20px;
+    background: #f4f5f7;
+    z-index: 1;
+    border-radius: 0% 50% 50% 50%;
+    transform: rotate(45deg) translate(120px) rotate(-45deg);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+div.marker::after {
+    content: '25';
+    font-weight: 700;
+    font-size: 10px;
+    color: #2cd9e5;
+    display: inline-block;
+    transform: rotate(135deg);
+    margin-left: 5px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+div.outer::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #f4f5f7;
+    z-index: 1;
+    transform: rotate(270deg) translate(110px);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+div.menu>i {
+    color: #41454a;
+    font-size: 20px;
+}
+
+div.menu>i.active {
+    background: linear-gradient(to bottom, #2fddea, #5bc1de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
